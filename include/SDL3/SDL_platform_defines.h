@@ -205,4 +205,9 @@
 #define SDL_PLATFORM_3DS    1
 #endif
 
+#ifdef __HYPERSCAN__
+#undef __HYPERSCAN__
+#define SDL_PLATFORM_HYPERSCAN 1
+#endif
+
 #endif /* SDL_platform_defines_h_ */
